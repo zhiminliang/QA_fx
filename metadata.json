@@ -1,0 +1,5 @@
+{
+  "name": "LogSight 智能日志分析",
+  "description": "专为测试团队设计的高效日志分析工具。支持iOS、Android及小程序日志的自动识别、高亮显示、统计分析及AI智能诊断。",
+  "requestFramePermissions": []
+}
