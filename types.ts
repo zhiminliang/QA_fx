@@ -1,3 +1,4 @@
+
 export enum LogLevel {
   INFO = 'INFO',
   WARNING = 'WARNING',
@@ -18,7 +19,7 @@ export interface LogEntry {
   timestamp: string;
   level: LogLevel;
   source: LogSource;
-  tag?: string; // Component or Process name
+  tag?: string;
   message: string;
   raw: string;
 }
@@ -29,4 +30,21 @@ export interface LogStats {
   error: number;
   debug: number;
   total: number;
+}
+
+export interface PerformanceMetric {
+  timestamp: string;
+  type: 'latency' | 'fps' | 'memory' | 'cpu';
+  value: number;
+  unit: string;
+  label: string;
+}
+
+export interface InterfaceMetric {
+  id: string;
+  url: string;
+  method: string;
+  status: string;
+  duration: number; // in ms
+  timestamp: string;
 }
